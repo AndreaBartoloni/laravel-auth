@@ -16,7 +16,7 @@ class PostSeeder extends Seeder
     
         foreach ($array_post as $post_item) {
             $nuovo_post = new Post();
-            $nuovo_post->title = $post_item['title'];
+            $nuovo_post->title = $post_item['nome'];
             $nuovo_post->description = $post_item['description'];
             $nuovo_post->image = $post_item['image'];
             $nuovo_post->save();
