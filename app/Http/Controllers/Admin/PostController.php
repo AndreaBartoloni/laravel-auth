@@ -38,7 +38,7 @@ class PostController extends Controller
 
         $newPost->fill($validate);
         $newPost->save();
-        return redirect()->route('admin.post.index');
+        return redirect()->route('admin.posts.index');
     }
 
     /**
